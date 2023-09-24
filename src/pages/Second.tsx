@@ -23,8 +23,14 @@ function Second() {
       <Navbar />
       <section className="min-h-screen">
         <div className="text-center p-10 py-10">
-          <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-            Ryann Goh
+          <h2 className="text-5xl py-2 inline-flex text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            Ryann Goh{" "}
+            <span className="animate-waving-hand hidden dark:inline-block">
+              👋🏻
+            </span>
+            <span className="animate-waving-hand inline-block dark:hidden">
+              🥑
+            </span>
           </h2>
           <h3 className="text-2xl py-2 text-foreground md:text-3xl">
             Young Entrepreneur, Developer and Designer.
@@ -45,7 +51,9 @@ function Second() {
       </section>
       <section>
         <div>
-          <h3 className="text-3xl py-1 text-foreground">Services I offer</h3>
+          <h3 className="text-3xl py-1 text-foreground font-semibold animate-bounce">
+            Services I offer
+          </h3>
           <p className="text-md py-2 leading-8 text-foreground">
             Since the beginning of my journey as a freelance designer and
             developer, I've done remote work for
@@ -107,7 +115,9 @@ function Second() {
       </section>
       <section className="py-10">
         <div>
-          <h3 className="text-3xl py-1 text-foreground ">Portfolio</h3>
+          <h3 className="text-3xl py-1 text-foreground font-semibold animate-bounce">
+            Portfolio
+          </h3>
           <p className="text-md py-2 leading-8 text-foreground">
             Since the beginning of my journey as a freelance designer and
             developer, I've done remote work for

@@ -74,6 +74,12 @@
     @apply bg-red-200 text-foreground bg-repeat dark:bg-starry-night;
   }
   html {
-    @apply container
+    @apply container scroll-smooth;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-0;
   }
 }

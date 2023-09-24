@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { globeConfig } from "@/utils/config.globe";
 import { World } from "@/utils/globe";
 import React from "react";
+import { ArrowDown } from "lucide-react";
 
 export default function GlobeComponent() {
   useEffect(() => {
@@ -23,6 +24,8 @@ export default function GlobeComponent() {
         alignItems: "center",
         justifyContent: "center",
       }}
-    ></div>
+    >
+      <ArrowDown className="animate-bounce w-20 h-20 text-foreground absolute" />
+    </div>
   );
 }
