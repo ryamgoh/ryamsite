@@ -71,9 +71,9 @@
     @apply border-border;
   }
   body {
-    @apply bg-white text-foreground object-fill dark:bg-starry-night;
+    @apply bg-red-200 text-foreground bg-repeat dark:bg-starry-night;
   }
-  /* html {
-    @apply bg-starry-night;
-  } */
+  html {
+    @apply container
+  }
 }

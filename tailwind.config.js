@@ -18,7 +18,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "starry-night":
-          "url('/public/the-beautiful-shining-stars-in-the-night-sky.jpg')",
+          "url('/the-beautiful-shining-stars-in-the-night-sky.jpg')",
+        "starry-night-bright": "url('/light-mode-starry-night.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",
