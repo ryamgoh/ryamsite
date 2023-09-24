@@ -14,6 +14,15 @@ export default function GlobeComponent() {
   }, []);
 
   return (
-    <div id="scene-container" className="flex items-center justify-center" />
+    <div
+      id="scene-container"
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    ></div>
   );
 }

@@ -14,10 +14,12 @@ import web4 from "/web4.png";
 import web5 from "/web5.png";
 import web6 from "/web6.png";
 import Navbar from "@/components/Navbar";
+import GlobeComponent from "@/components/GlobeComponent";
 
 function Second() {
   return (
     <div>
+      <GlobeComponent />
       <Navbar />
       <section className="min-h-screen">
         <div className="text-center p-10 py-10">
