@@ -20,5 +20,6 @@
   "embeddedLanguageFormatting": "auto",
   "vueIndentScriptAndStyle": false,
   "filepath": "c:\\Users\\ryann\\Code\\React\\ryamsite\\src\\App.tsx",
-  "parser": "typescript"
+  "parser": "typescript",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
