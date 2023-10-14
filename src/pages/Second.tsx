@@ -2,69 +2,86 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
+  AiFillMessage,
+  AiFillMail,
 } from "react-icons/ai";
 import deved from "/dev-ed-wave.png";
-import web1 from "/web1.png";
-import web2 from "/web2.png";
-import web3 from "/web3.png";
-import web4 from "/web4.png";
-import web5 from "/web5.png";
+import imda from "/imda.png";
+import agcs from "/agcs.png";
+import scsmentor from "/scsmentor.png";
+import teamE from "/teamE.png";
+import nusproduct from "/nusproduct.png";
 import web6 from "/web6.png";
 import Navbar from "@/components/Navbar";
 import GlobeComponent from "@/components/GlobeComponent";
 import { Modal } from "@/components/Modal";
 import { Separator } from "@/components/ui/separator";
-import ServicesCard from "@/components/ServicesCard";
+// import ServicesCard from "@/components/ServicesCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import ParticleComponent from "@/components/ParticleComponent";
 
 const data = [
   {
-    id: 1,
-    title: "IMDA",
-    date: "Aug - Dec 2023",
-    img: web1,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
+    title: "NUS Product Club",
+    role: "Product Management Curriculum",
+    date: "Aug 2023 - Present",
+    img: nusproduct,
+    description: [
+      "• 1st Runners Up - Internal Product Challenge",
+      "• Pioneer batch to go through a 6-week deep dive into the in-house Product Management Essentials course (PM1101E) taught by industry experts.",
+      "• Worked with a team of 3 to develop a product from ideation to launch, including conducting user research, prototyping, and product validation.",
+      "• Utilised industry-tested product discovery strategies",
+      "• Proficiently analyzed product metrics to inform and drive data-driven decision-making processes, ensuring product optimization.",
+    ],
   },
   {
-    id: 2,
     title: "IMDA",
+    role: "Product Management Intern",
     date: "Aug - Dec 2023",
-    img: web2,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
+    img: imda,
+    description: [
+      "• Worked with SME Go Digital division and Platforms to push out Industry Digital Plan (IDP) for Legal and Retail sectors assuming the role as a solutions curator.",
+      "• Apply design thinking processes to design IDPs for Retail and Legal Sectors, including identifying user personas, ethnographic research, design workshops, ideation sessions, etc.",
+      "• Collaborated with team members and external stakeholders, including SMEs and partnering agencies, to build common understanding, project plans, and gain consensus on the team's plans and actions.",
+      "• Worked with UI/UX team to streamline the next generation of IDP design i.e. revamping from PDF to HTML format.",
+    ],
   },
   {
-    id: 3,
-    title: "IMDA",
+    title: "Singapore Computer Society",
+    role: "Hackathon Mentor",
     date: "Aug - Dec 2023",
-    img: web3,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
+    img: scsmentor,
+    description: [
+      "• Mentored and guided secondary school students participating in the SCS Splash Awards 2023 Hackathon.",
+      "• Provided valuable expert insights and precise technical guidance to elevate students' project development.",
+      "• Empowered and mentored aspiring talents, imparting specialized technical knowledge in key areas such as Web Development Frameworks (FERN Stack, CRUD routing), Cloud Technologies, Generative AI, AGILE Methodology, and meticulous project planning.",
+    ],
   },
   {
-    id: 4,
-    title: "IMDA",
+    title: "Allen & Gledhill",
+    role: "Corporate Secreterial Intern",
     date: "Aug - Dec 2023",
-    img: web4,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
+    img: agcs,
+    description: [
+      "• Provided valuable support to lawyers in managing a diverse portfolio of over 100 locally incorporated and foreign corporate clients.",
+      "• Ensured adherence to applicable statutory and regulatory obligations (ACRA, IRAS, etc.).",
+      "• Demonstrated proficiency in drafting and issuing company directorial resolutions, overseeing regulatory filings, and maintaining minute books.",
+      "• Possessed advanced skills in Microsoft Word and Excel.",
+    ],
   },
   {
-    id: 5,
-    title: "IMDA",
-    date: "Aug - Dec 2023",
-    img: web5,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
-  },
-  {
-    id: 6,
-    title: "IMDA",
-    date: "Aug - Dec 2023",
-    img: web6,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto dolorum minima eum velit ex magni quis quod nobis qui, fuga molestiae accusamus nam! Repellat laboriosam veniam officia libero blanditiis maxime sed animi expedita repudiandae. Sequi voluptatibus eius minus amet blanditiis, animi doloribus deserunt, quaerat incidunt porro itaque, ex eum?",
+    title: "Team E",
+    role: "Founding Chairperson",
+    date: "Jan 2022 - Aug 2023",
+    img: teamE,
+    description: [
+      "• Environmental Organisation focusing on Singapore's E-waste Space.",
+      "• Awarded the People's Association Youth Movement (PAYM) Community Grant (worth $3k)",
+      "• Established partners with Industry leaders - ALBA and Choa Chu Kang CC.",
+      "• 100+ student volunteers engaged and >8 tonnes of E-waste collected.",
+      "• Still open to incorporating into an NGO (Currently inactive)",
+    ],
   },
 ];
 
@@ -73,7 +90,8 @@ function Second() {
     <div>
       <GlobeComponent />
       <Navbar />
-      <section className="min-h-screen">
+      <section className="relative min-h-screen">
+        <ParticleComponent />
         <div className="p-10 py-10 text-center">
           <h2 className="inline-flex py-2 text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl">
             Ryann Goh{" "}
@@ -92,9 +110,15 @@ function Second() {
             needs. Join me down below and let's get cracking!
           </p>
           <div className="flex justify-center gap-16 py-3 text-5xl text-foreground">
-            <AiFillTwitterCircle />
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <div className="transition-all duration-500 ease-in-out hover:scale-125 hover:cursor-pointer">
+              <AiFillTwitterCircle />
+            </div>
+            <div className="transition-all duration-500 ease-in-out hover:scale-125 hover:cursor-pointer">
+              <AiFillLinkedin />
+            </div>
+            <div className="transition-all duration-500 ease-in-out hover:scale-125 hover:cursor-pointer">
+              <AiFillYoutube />
+            </div>
           </div>
           <AnimateOnScroll>
             <div className="relative mx-auto mt-20 flex h-80 w-80 items-center justify-center overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-96 md:w-96">
@@ -103,9 +127,9 @@ function Second() {
           </AnimateOnScroll>
         </div>
       </section>
-      <AnimateOnScroll threshold={0.05} reappear={true}>
+      {/* <AnimateOnScroll threshold={0.05} reappear={true}>
         <ServicesCard />
-      </AnimateOnScroll>
+      </AnimateOnScroll> */}
       <section className="py-10">
         <div>
           <h3 className="animate-pulse py-1 text-3xl font-semibold text-foreground">
@@ -126,28 +150,32 @@ function Second() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {data.map(({ id, title, date, img, description }) => (
-            <div className="relative" key={id}>
-              <img
-                className="h-full rounded-lg object-cover shadow-lg transition-all duration-500 ease-in-out hover:scale-95 hover:object-contain"
-                src={img}
-              />
-              <div className="absolute bottom-4 left-4 rounded-lg border border-foreground bg-accent px-4 py-1 text-sm font-semibold text-foreground sm:text-lg md:text-xl">
-                <h1>{title}</h1>
-                <Separator />
-                <h2>{date}</h2>
-              </div>
-              <Modal
-                btn="Click Me!"
-                className="absolute bottom-4 right-4"
-                dialogTitle="Product Management Intern"
-                dialogDescription="IMDA"
-              >
-                <div className="h-[70vh] overflow-scroll">
-                  <img src={img} className="w-full" />
-                  <p>{description}</p>
+          {data.map(({ title, date, img, description, role }) => (
+            <div className="relative" key={Math.random()}>
+              <div className="group">
+                <img
+                  className="h-[20rem] w-full rounded-lg object-cover shadow-lg transition-all duration-500 ease-in-out hover:scale-95"
+                  src={img}
+                />
+                <div className="sm:text-md absolute bottom-4 left-4 rounded-lg border border-foreground bg-accent px-4 py-1 text-sm font-semibold text-foreground transition-all duration-500 group-hover:opacity-0 md:text-lg">
+                  <h1>{title}</h1>
+                  <h2 className="font-thin italic">{role}</h2>
                 </div>
-              </Modal>
+                <Modal
+                  btn="More Info"
+                  // className="absolute bottom-4 right-4 hidden transition-all duration-500 hover:block group-hover:block"
+                  className="absolute bottom-4 right-4 opacity-0 transition-all duration-500 group-hover:opacity-100"
+                  dialogTitle={role}
+                  dialogDescription={date}
+                >
+                  <div className="h-[60vh] overflow-scroll">
+                    <img src={img} className="m-auto h-[80%]" />
+                    {description.map((desc) => (
+                      <p className="py-2 text-foreground">{desc}</p>
+                    ))}
+                  </div>
+                </Modal>
+              </div>
             </div>
           ))}
         </div>

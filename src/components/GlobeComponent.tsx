@@ -3,6 +3,7 @@ import { globeConfig } from "@/utils/config.globe";
 import { World } from "@/utils/globe";
 import React from "react";
 import { ArrowDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function GlobeComponent() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function GlobeComponent() {
     <div
       id="scene-container"
       style={{
+        position: "relative",
         width: "100%",
         height: "100vh",
         display: "flex",
@@ -25,7 +27,10 @@ export default function GlobeComponent() {
         justifyContent: "center",
       }}
     >
-      <ArrowDown className="animate-bounce w-20 h-20 text-foreground absolute" />
+      <ArrowDown
+        className="absolute h-20 w-20 animate-bounce text-foreground transition-all duration-500 ease-in-out hover:scale-110 hover:animate-spin hover:cursor-pointer hover:text-teal-500"
+        onClick={() => {}}
+      />
     </div>
   );
 }
